@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AirsoftMunteanu | Home</title>
-    <link rel="icon" type="image/x-icon" href="./images/target.png" />
+    <link rel="icon" type="image/x-icon" href="./images/Mario-Logo.svg" />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -20,10 +20,23 @@
         max-width: 95%;
         margin: auto;
       }
+      .custom-swiper-pagination .swiper-pagination-bullet {
+        background: #fff; /* Change this to any color you want */
+        width: 12px; /* Change this to increase/decrease the size */
+        height: 12px; /* Change this to increase/decrease the size */
+        opacity: 1;
+        transition: background 0.2s;
+      }
+
+      .custom-swiper-pagination .swiper-pagination-bullet-active {
+        background: #007bff; /* Change this to any color you want */
+      }
     </style>
   </head>
 
-  <body class="font-sans bg-gray-100 flex flex-col min-h-screen">
+  <body
+    class="font-sans bg-gray-100 flex flex-col min-h-screen overscroll-none"
+  >
     <!-- Navigation -->
     <nav class="bg-gray-800 p-4">
       <div class="container mx-auto flex justify-between items-center">
@@ -31,7 +44,7 @@
           <a href="index.html" class="flex items-center">
             <h1 class="text-white text-lg font-bold">AirsoftMunteanu</h1>
           </a>
-          <img src="./images/target.png" class="w-8 h-8 ml-2" />
+          <img src="./images/Mario-Logo.svg" class="w-8 h-8 ml-2" />
         </div>
         <div class="hidden lg:flex space-x-4">
           <a href="index.html" class="text-white">Home</a>
@@ -108,7 +121,7 @@
             />
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination custom-swiper-pagination"></div>
       </div>
       <button
         type="button"
@@ -253,7 +266,7 @@
         slidesPerView: 1,
         spaceBetween: 10,
         pagination: {
-          el: ".swiper-pagination",
+          el: ".custom-swiper-pagination",
           clickable: true,
         },
         autoplay: {
