@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirsoftMunteanu | Contact</title>
+    <link rel="icon" type="image/x-icon" href="../images/target.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-sans bg-gray-100 flex flex-col min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+          <a href="../index.html" class="flex items-center">
+            <h1 class="text-white text-lg font-bold">AirsoftMunteanu</h1>
+          </a>
+          <img src="../images/target.png" class="w-8 h-8 ml-2" />
+        </div>
+        <div class="hidden lg:flex space-x-4">
+          <a href="../index.html" class="text-white">Home</a>
+          <a href="shop.html" class="text-white">Shop</a>
+          <a href="events.html" class="text-white">Events</a>
+          <a href="about.html" class="text-white">About</a>
+          <a href="policies.html" class="text-white">Policies</a>
+          <a href="contact.html" class="text-white">Contact</a>
+          <a href="login.html" class="text-blue-500">Login</a>
+          <a href="register.html" class="text-green-500">Register</a>
+        </div>
+        <div class="lg:hidden">
+          <button id="menuBtn" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobileMenu"
+      class="lg:hidden bg-gray-800 text-white p-4 space-y-4 hidden"
+    >
+      <a href="../index.html" class="block">Home</a>
+      <a href="shop.html" class="block">Shop</a>
+      <a href="events.html" class="block">Events</a>
+      <a href="about.html" class="block">About</a>
+      <a href="policies.html" class="block">Policies</a>
+      <a href="contact.html" class="block">Contact</a>
+      <a href="login.html" class="block text-blue-500">Login</a>
+      <a href="register.html" class="block text-green-500">Register</a>
+    </div>
+
+    <!-- Content -->
+    <div class="container mx-auto mt-8 flex-1">
+      <section class="flex flex-col lg:flex-row gap-8">
+        <div class="lg:w-2/3">
+          <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+          <form action="#" method="post" class="space-y-4">
+            <div>
+              <label for="name" class="block text-gray-600">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full p-2 border rounded"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-gray-600">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full p-2 border rounded"
+                required
+              />
+            </div>
+            <div>
+              <label for="message" class="block text-gray-600">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full p-2 border rounded"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white p-2 rounded">
+              Submit
+            </button>
+          </form>
+        </div>
+
+        <aside class="lg:w-1/3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1482.878424931956!2d2.3103300000000004!3d41.98403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a52f505b0487c5%3A0x90885d08746b034c!2sCarrer%20Joan%20Maragall%2C%207%2C%2008510%20Roda%20de%20Ter%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1673468041273!5m2!1ses!2ses"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </aside>
+      </section>
+
+      <section class="flex flex-col items-center mt-8">
+        <h2 class="text-2xl font-bold mb-4">Connect with Us</h2>
+        <div class="flex space-x-4">
+          <img src="../images/facebook.png" alt="Facebook" class="w-8 h-8" />
+          <img src="../images/twitter.png" alt="Twitter" class="w-8 h-8" />
+          <img src="../images/instagram.png" alt="Instagram" class="w-8 h-8" />
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 mt-8">
+      <div class="container mx-auto flex flex-wrap justify-center items-center">
+        <!-- Location -->
+        <div class="footer-section mb-4 mx-4">
+          <img
+            src="../images/pin.png"
+            alt="Location Logo"
+            class="w-8 h-8 mb-2 mx-auto"
+          />
+          <p class="text-sm text-center">123 Main Street, Cityville, Country</p>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="footer-section mb-4 mx-4">
+          <img
+            src="../images/telephone-symbol-button.png"
+            alt="Phone Logo"
+            class="w-8 h-8 mb-2 mx-auto"
+          />
+          <p class="text-sm text-center">Phone: +1 (555) 123-4567</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-section mb-4 mx-4">
+          <img
+            src="../images/contact-form.png"
+            alt="Contact Logo"
+            class="w-8 h-8 mb-2 mx-auto"
+          />
+          <p class="text-sm text-center">Email: info@example.com</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+    <script>
+      // Toggle mobile menu
+      document.getElementById("menuBtn").addEventListener("click", function () {
+        document.getElementById("mobileMenu").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

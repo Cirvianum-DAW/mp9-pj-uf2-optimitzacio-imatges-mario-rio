@@ -1,0 +1,26 @@
+{
+  "name": "tailwind-parcel-project",
+  "version": "1.0.0",
+  "description": "Projecte que utilitza Tailwind CSS i Parcel",
+  "scripts": {
+    "dev": "parcel src/index.html && parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [
+    "tailwind",
+    "parcel",
+    "css",
+    "html",
+    "javascript"
+  ],
+  "author": "El teu nom",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-postcss": "^2.10.0",
+    "autoprefixer": "^10.4.16",
+    "parcel": "^2.10.3",
+    "postcss": "^8.4.31",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.3.3"
+  }
+}

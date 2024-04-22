@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirsoftMunteanu | Shop</title>
+    <link rel="icon" type="image/x-icon" href="../images/target.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-sans bg-gray-100 flex flex-col min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+          <a href="../index.html" class="flex items-center">
+            <h1 class="text-white text-lg font-bold">AirsoftMunteanu</h1>
+          </a>
+          <img src="../images/target.png" class="w-8 h-8 ml-2" />
+        </div>
+        <div class="hidden lg:flex space-x-4">
+          <a href="../index.html" class="text-white">Home</a>
+          <a href="shop.html" class="text-white">Shop</a>
+          <a href="events.html" class="text-white">Events</a>
+          <a href="about.html" class="text-white">About</a>
+          <a href="policies.html" class="text-white">Policies</a>
+          <a href="contact.html" class="text-white">Contact</a>
+          <a href="login.html" class="text-blue-500">Login</a>
+          <a href="register.html" class="text-green-500">Register</a>
+        </div>
+        <div class="lg:hidden">
+          <button id="menuBtn" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobileMenu"
+      class="lg:hidden bg-gray-800 text-white p-4 space-y-4 hidden"
+    >
+      <a href="../index.html" class="block">Home</a>
+      <a href="shop.html" class="block">Shop</a>
+      <a href="events.html" class="block">Events</a>
+      <a href="about.html" class="block">About</a>
+      <a href="policies.html" class="block">Policies</a>
+      <a href="contact.html" class="block">Contact</a>
+      <a href="login.html" class="block text-blue-500">Login</a>
+      <a href="register.html" class="block text-green-500">Register</a>
+    </div>
+
+    <!-- Content -->
+    <div class="container mx-auto mt-8 flex-1">
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="../images/gear1.jpg"
+            class="w-full h-48 object-cover mb-4 rounded-md"
+          />
+          <h3 class="text-lg font-semibold mb-2">Product 1</h3>
+          <p class="text-gray-500 mb-2">$XX.XX</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+            Buy
+          </button>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="../images/gear2.jpg"
+            class="w-full h-48 object-cover mb-4 rounded-md"
+          />
+          <h3 class="text-lg font-semibold mb-2">Product 2</h3>
+          <p class="text-gray-500 mb-2">$XX.XX</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+            Buy
+          </button>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="../images/gear3.jpg"
+            class="w-full h-48 object-cover mb-4 rounded-md"
+          />
+          <h3 class="text-lg font-semibold mb-2">Product 3</h3>
+          <p class="text-gray-500 mb-2">$XX.XX</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+            Buy
+          </button>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="../images/gear4.jpg"
+            class="w-full h-48 object-cover mb-4 rounded-md"
+          />
+          <h3 class="text-lg font-semibold mb-2">Product 4</h3>
+          <p class="text-gray-500 mb-2">$XX.XX</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+            Buy
+          </button>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="../images/gear5.jpg"
+            class="w-full h-48 object-cover mb-4 rounded-md"
+          />
+          <h3 class="text-lg font-semibold mb-2">Product 5</h3>
+          <p class="text-gray-500 mb-2">$XX.XX</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+            Buy
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto mt-8">
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="../images/gun1.jpg"
+            class="w-full h-48 object-cover mb-4 rounded-md"
+          />
+          <h3 class="text-lg font-semibold mb-2">Product 6</h3>
+          <p class="text-gray-500 mb-2">$XX.XX</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+            Buy
+          </button>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="../images/gun2.jpg"
+            class="w-full h-48 object-cover mb-4 rounded-md"
+          />
+          <h3 class="text-lg font-semibold mb-2">Product 7</h3>
+          <p class="text-gray-500 mb-2">$XX.XX</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+            Buy
+          </button>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="../images/gun3.jpg"
+            class="w-full h-48 object-cover mb-4 rounded-md"
+          />
+          <h3 class="text-lg font-semibold mb-2">Product 8</h3>
+          <p class="text-gray-500 mb-2">$XX.XX</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+            Buy
+          </button>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="../images/gun4.jpg"
+            class="w-full h-48 object-cover mb-4 rounded-md"
+          />
+          <h3 class="text-lg font-semibold mb-2">Product 9</h3>
+          <p class="text-gray-500 mb-2">$XX.XX</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+            Buy
+          </button>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="../images/gun5.jpg"
+            class="w-full h-48 object-cover mb-4 rounded-md"
+          />
+          <h3 class="text-lg font-semibold mb-2">Product 10</h3>
+          <p class="text-gray-500 mb-2">$XX.XX</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+            Buy
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 mt-8">
+      <div class="container mx-auto flex flex-wrap justify-center items-center">
+        <!-- Location -->
+        <div class="footer-section mb-4 mx-4">
+          <img
+            src="../images/pin.png"
+            alt="Location Logo"
+            class="w-8 h-8 mb-2 mx-auto"
+          />
+          <p class="text-sm text-center">123 Main Street, Cityville, Country</p>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="footer-section mb-4 mx-4">
+          <img
+            src="../images/telephone-symbol-button.png"
+            alt="Phone Logo"
+            class="w-8 h-8 mb-2 mx-auto"
+          />
+          <p class="text-sm text-center">Phone: +1 (555) 123-4567</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-section mb-4 mx-4">
+          <img
+            src="../images/contact-form.png"
+            alt="Contact Logo"
+            class="w-8 h-8 mb-2 mx-auto"
+          />
+          <p class="text-sm text-center">Email: info@example.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+    <script>
+      // Toggle mobile menu
+      document.getElementById("menuBtn").addEventListener("click", function () {
+        document.getElementById("mobileMenu").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

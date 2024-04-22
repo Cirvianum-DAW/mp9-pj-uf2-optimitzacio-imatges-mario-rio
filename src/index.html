@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirsoftMunteanu | Home</title>
+    <link rel="icon" type="image/x-icon" href="./images/target.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <style>
+      /* Styles for the Swiper container */
+      .swiper-container {
+        max-width: 95%;
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body class="font-sans bg-gray-100 flex flex-col min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <h1 class="text-white text-lg font-bold">AirsoftMunteanu</h1>
+          </a>
+          <img src="./images/target.png" class="w-8 h-8 ml-2" />
+        </div>
+        <div class="hidden lg:flex space-x-4">
+          <a href="index.html" class="text-white">Home</a>
+          <a href="./html/shop.html" class="text-white">Shop</a>
+          <a href="./html/events.html" class="text-white">Events</a>
+          <a href="./html/about.html" class="text-white">About</a>
+          <a href="./html/policies.html" class="text-white">Policies</a>
+          <a href="./html/contact.html" class="text-white">Contact</a>
+          <a href="./html/login.html" class="text-blue-500">Login</a>
+          <a href="./html/register.html" class="text-green-500">Register</a>
+        </div>
+        <div class="lg:hidden">
+          <button id="menuBtn" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobileMenu"
+      class="lg:hidden bg-gray-800 text-white p-4 space-y-4 hidden"
+    >
+      <a href="index.html" class="block">Home</a>
+      <a href="./html/shop.html" class="block">Shop</a>
+      <a href="./html/events.html" class="block">Events</a>
+      <a href="./html/about.html" class="block">About</a>
+      <a href="./html/policies.html" class="block">Policies</a>
+      <a href="./html/contact.html" class="block">Contact</a>
+      <a href="./html/login.html" class="block text-blue-500">Login</a>
+      <a href="./html/register.html" class="block text-green-500">Register</a>
+    </div>
+
+    <!-- Carousel -->
+    <div class="mb-4"></div>
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+      <div
+        class="relative h-56 overflow-hidden rounded-lg md:h-96 swiper-container"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./images/airsoft.jpg"
+              class="w-full h-full object-cover"
+              alt="Airsoft Image 1"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/camp.jpg"
+              class="w-full h-full object-cover"
+              alt="Airsoft Image 2"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/camp2.jpg"
+              class="w-full h-full object-cover"
+              alt="Airsoft Image 3"
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <button
+        type="button"
+        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev
+      ></button>
+      <button
+        type="button"
+        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next
+      ></button>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container mx-auto mt-8 flex min-h-screen">
+      <!-- Articles -->
+      <div class="w-2/3 pr-8 flex-grow">
+        <!-- Article about the airsoft camp -->
+        <article class="mb-8">
+          <h2 class="text-2xl font-bold mb-4">Airsoft Camp Description</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ligula
+            ante, laoreet consectetur ultricies sit amet, convallis at arcu.
+            Praesent quis tellus tincidunt, suscipit justo eu, feugiat risus.
+            Maecenas egestas imperdiet orci at bibendum. Cras ullamcorper
+            pretium odio ac facilisis. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas. Nullam ac
+            pretium leo, eget pulvinar eros. Morbi non sapien nulla. Maecenas
+            ultrices sit amet nibh sed egestas. Quisque efficitur venenatis
+            tortor, et posuere erat egestas ut. Curabitur molestie, elit nec
+            elementum pretium, tortor dui porta turpis, volutpat convallis justo
+            libero sit amet urna. Fusce venenatis malesuada luctus. Proin id
+            sodales arcu. Integer vitae mauris pellentesque, auctor risus vel,
+            euismod ante. Nam posuere quam at tortor fermentum fringilla. Etiam
+            at fermentum velit, sit amet dignissim ipsum.
+          </p>
+          <p>
+            Sed ornare, orci quis congue tempor, sapien enim rutrum erat, quis
+            tempus diam purus at nibh. Integer quis eros mauris. Donec pulvinar
+            purus est, non molestie odio euismod laoreet. Donec pellentesque
+            nisi et pellentesque finibus. Morbi ac interdum ipsum, quis tempus
+            urna. Cras suscipit dictum magna vitae viverra. Mauris quis euismod
+            tellus. Suspendisse ac aliquam massa, et efficitur lorem.
+          </p>
+        </article>
+
+        <!-- Article with image on the left and video on the right -->
+        <article class="flex mb-8">
+          <div class="w-1/2 pr-4">
+            <img src="images/camp.jpg" alt="Camp Image" class="w-full h-auto" />
+          </div>
+          <div class="w-1/2">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/your-video-id"
+              title="YouTube Video"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </article>
+      </div>
+
+      <!-- Aside on the right with three smaller images and links -->
+      <aside class="w-1/3 flex-shrink-0">
+        <div class="p-4 mb-4">
+          <a href="./html/policies.html">
+            <img
+              src="images/normativa.jpg"
+              alt="Link 1"
+              class="w-64 h-auto mb-2"
+            />
+            Policies
+          </a>
+        </div>
+        <div class="p-4 mb-4">
+          <a href="./html/shop.html">
+            <img src="images/shop.jpg" alt="Link 2" class="w-64 h-auto mb-2" />
+            Shop
+          </a>
+        </div>
+        <div class="p-4">
+          <a href="./html/contact.html">
+            <img
+              src="images/contacte.jpg"
+              alt="Link 3"
+              class="w-64 h-auto mb-2"
+            />
+            Contact
+          </a>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 mt-8">
+      <div class="container mx-auto flex flex-wrap justify-center items-center">
+        <!-- Location -->
+        <div class="footer-section mb-4 mx-4">
+          <img
+            src="./images/pin.png"
+            alt="Location Logo"
+            class="w-8 h-8 mb-2 mx-auto"
+          />
+          <p class="text-sm text-center">123 Main Street, Cityville, Country</p>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="footer-section mb-4 mx-4">
+          <img
+            src="./images/telephone-symbol-button.png"
+            alt="Phone Logo"
+            class="w-8 h-8 mb-2 mx-auto"
+          />
+          <p class="text-sm text-center">Phone: +1 (555) 123-4567</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-section mb-4 mx-4">
+          <img
+            src="./images/contact-form.png"
+            alt="Contact Logo"
+            class="w-8 h-8 mb-2 mx-auto"
+          />
+          <p class="text-sm text-center">Email: info@example.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      // Toggle mobile menu
+      document.getElementById("menuBtn").addEventListener("click", function () {
+        document.getElementById("mobileMenu").classList.toggle("hidden");
+      });
+
+      // Initialize Swiper carousel
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 5000,
+        },
+        navigation: {
+          nextEl: "[data-carousel-next]",
+          prevEl: "[data-carousel-prev]",
+        },
+      });
+    </script>
+  </body>
+</html>

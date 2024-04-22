@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirsoftMunteanu | About</title>
+    <link rel="icon" type="image/x-icon" href="../images/target.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-sans bg-gray-100 flex flex-col min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+          <a href="../index.html" class="flex items-center">
+            <h1 class="text-white text-lg font-bold">AirsoftMunteanu</h1>
+          </a>
+          <img src="../images/target.png" class="w-8 h-8 ml-2" />
+        </div>
+        <div class="hidden lg:flex space-x-4">
+          <a href="../index.html" class="text-white">Home</a>
+          <a href="shop.html" class="text-white">Shop</a>
+          <a href="events.html" class="text-white">Events</a>
+          <a href="about.html" class="text-white">About</a>
+          <a href="policies.html" class="text-white">Policies</a>
+          <a href="contact.html" class="text-white">Contact</a>
+          <a href="login.html" class="text-blue-500">Login</a>
+          <a href="register.html" class="text-green-500">Register</a>
+        </div>
+        <div class="lg:hidden">
+          <button id="menuBtn" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobileMenu"
+      class="lg:hidden bg-gray-800 text-white p-4 space-y-4 hidden"
+    >
+      <a href="../index.html" class="block">Home</a>
+      <a href="shop.html" class="block">Shop</a>
+      <a href="events.html" class="block">Events</a>
+      <a href="about.html" class="block">About</a>
+      <a href="policies.html" class="block">Policies</a>
+      <a href="contact.html" class="block">Contact</a>
+      <a href="login.html" class="block text-blue-500">Login</a>
+      <a href="register.html" class="block text-green-500">Register</a>
+    </div>
+
+    <!-- Content -->
+    <div class="container mx-auto mt-8 flex-1">
+      <!-- About Us Section -->
+      <section class="flex flex-col lg:flex-row gap-8">
+        <!-- Articles -->
+        <div class="lg:w-2/3">
+          <!-- Article 1 -->
+          <article class="mb-8">
+            <h2 class="text-2xl font-bold mb-2">Our Story</h2>
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="mb-8">
+            <h2 class="text-2xl font-bold mb-2">Our Mission</h2>
+            <p class="text-gray-600">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="mb-8">
+            <h2 class="text-2xl font-bold mb-2">Our Vision</h2>
+            <p class="text-gray-600">
+              Suspendisse bibendum, sem ut finibus lobortis, eros turpis aliquam
+              diam, vitae porttitor nulla augue sed libero. Morbi consequat
+              consectetur urna non semper. Quisque dignissim consequat urna, et
+              tristique ipsum aliquam nec. Nullam convallis sem id neque ornare,
+              eu tincidunt ipsum bibendum. Pellentesque in pellentesque risus.
+              Suspendisse at orci non nibh suscipit bibendum a eget eros.
+              Suspendisse accumsan feugiat elit, vel iaculis orci tristique
+              eget. Mauris condimentum ipsum eget felis semper auctor. Vivamus
+              magna justo, vulputate at purus a, convallis volutpat sem. Cras in
+              dui in eros suscipit euismod. Phasellus nec lobortis leo.
+            </p>
+          </article>
+        </div>
+
+        <!-- Aside with Images -->
+        <aside class="lg:w-1/3">
+          <!-- Image 1 -->
+          <img
+            src="../images/aboutus1.jpg"
+            alt="Image 1"
+            class="w-full h-48 object-cover mb-4"
+          />
+
+          <!-- Image 2 -->
+          <img
+            src="../images/aboutus2.jpg"
+            alt="Image 2"
+            class="w-full h-48 object-cover mb-4"
+          />
+
+          <!-- Image 3 -->
+          <img
+            src="../images/aboutus3.jpg"
+            alt="Image 3"
+            class="w-full h-48 object-cover mb-4"
+          />
+        </aside>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 mt-8">
+      <div class="container mx-auto flex flex-wrap justify-center items-center">
+        <!-- Location -->
+        <div class="footer-section mb-4 mx-4">
+          <img
+            src="../images/pin.png"
+            alt="Location Logo"
+            class="w-8 h-8 mb-2 mx-auto"
+          />
+          <p class="text-sm text-center">123 Main Street, Cityville, Country</p>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="footer-section mb-4 mx-4">
+          <img
+            src="../images/telephone-symbol-button.png"
+            alt="Phone Logo"
+            class="w-8 h-8 mb-2 mx-auto"
+          />
+          <p class="text-sm text-center">Phone: +1 (555) 123-4567</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-section mb-4 mx-4">
+          <img
+            src="../images/contact-form.png"
+            alt="Contact Logo"
+            class="w-8 h-8 mb-2 mx-auto"
+          />
+          <p class="text-sm text-center">Email: info@example.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+    <script>
+      // Toggle mobile menu
+      document.getElementById("menuBtn").addEventListener("click", function () {
+        document.getElementById("mobileMenu").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
