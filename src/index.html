@@ -15,28 +15,25 @@
     />
 
     <style>
-      /* Styles for the Swiper container */
       .swiper-container {
         max-width: 95%;
         margin: auto;
       }
       .custom-swiper-pagination .swiper-pagination-bullet {
-        background: #fff; /* Change this to any color you want */
-        width: 12px; /* Change this to increase/decrease the size */
-        height: 12px; /* Change this to increase/decrease the size */
+        background: #fff;
+        width: 12px;
+        height: 12px;
         opacity: 1;
         transition: background 0.2s;
       }
 
       .custom-swiper-pagination .swiper-pagination-bullet-active {
-        background: #007bff; /* Change this to any color you want */
+        background: #007bff;
       }
     </style>
   </head>
 
-  <body
-    class="font-sans bg-gray-100 flex flex-col min-h-screen overscroll-none"
-  >
+  <body class="font-sans bg-gray-100 flex flex-col min-h-screen overscroll-none">
     <!-- Navigation -->
     <nav class="bg-gray-800 p-4">
       <div class="container mx-auto flex justify-between items-center">
@@ -92,51 +89,64 @@
       <a href="./html/register.html" class="block text-green-500">Register</a>
     </div>
 
-    <!-- Carousel -->
-    <div class="mb-4"></div>
-    <div id="default-carousel" class="relative w-full" data-carousel="slide">
-      <div
-        class="relative h-56 overflow-hidden rounded-lg md:h-96 swiper-container"
-      >
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img
-              src="./images/airsoft.jpg"
-              class="w-full h-full object-cover"
-              alt="Airsoft Image 1"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./images/camp.jpg"
-              class="w-full h-full object-cover"
-              alt="Airsoft Image 2"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./images/camp2.jpg"
-              class="w-full h-full object-cover"
-              alt="Airsoft Image 3"
-            />
-          </div>
+  <!-- Carousel -->
+  <div id="default-carousel" class="relative w-full h-screen overflow-hidden">
+    <!-- Swiper slides -->
+    <div id="swiperContainer" class="relative swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="./images/airsoft.jpg"
+            class="w-full h-full object-cover object-center"
+            alt="Airsoft Image 1"
+          />
         </div>
-        <div class="swiper-pagination custom-swiper-pagination"></div>
+        <div class="swiper-slide">
+          <img
+            src="./images/camp.jpg"
+            class="w-full h-full object-cover object-center"
+            alt="Airsoft Image 2"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./images/camp2.jpg"
+            class="w-full h-full object-cover object-center"
+            alt="Airsoft Image 3"
+          />
+        </div>
       </div>
-      <button
-        type="button"
-        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-prev
-      ></button>
-      <button
-        type="button"
-        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-next
-      ></button>
+    </div>
+    
+    <!-- Pagination dots -->
+    <div class="absolute top-4 left-1/2 transform -translate-x-1/2 z-50 flex space-x-2">
+      <div class="custom-swiper-pagination"></div>
     </div>
 
+    <!-- Scroll down button -->
+    <button
+      id="scrollDownBtn"
+      type="button"
+      class="absolute bottom-16 inset-x-0 mx-auto z-50 w-12 h-12 bg-white rounded-full border border-gray-300 focus:outline-none"
+    >
+      <svg
+        class="w-6 h-6 text-gray-600 mx-auto"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 14l-7 7m0 0l-7-7m7 7V3"
+        />
+      </svg>
+    </button>
+  </div>
+      
     <!-- Content Section -->
-    <div class="container mx-auto mt-8 flex min-h-screen">
+    <div id="content" class="container mx-auto mt-8 flex min-h-screen">
       <!-- Articles -->
       <div class="w-2/3 pr-8 flex-grow">
         <!-- Article about the airsoft camp -->
@@ -268,11 +278,22 @@
     <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      // Toggle mobile menu
-      document.getElementById("menuBtn").addEventListener("click", function () {
-        document.getElementById("mobileMenu").classList.toggle("hidden");
+      // Function to set carousel height dynamically based on viewport size
+      function setCarouselHeight() {
+        var navbarHeight = document.querySelector('nav').offsetHeight;
+        var carouselHeight = window.innerHeight - navbarHeight;
+        document.getElementById('swiperContainer').style.height = carouselHeight + 'px';
+      }
+    
+      // Call the function initially and on window resize
+      setCarouselHeight();
+      window.addEventListener('resize', setCarouselHeight);
+    
+      // Smooth scroll to content
+      document.getElementById("scrollDownBtn").addEventListener("click", function () {
+        document.getElementById("content").scrollIntoView({ behavior: "smooth" });
       });
-
+    
       // Initialize Swiper carousel
       var swiper = new Swiper(".swiper-container", {
         slidesPerView: 1,
