@@ -146,86 +146,71 @@
     </div>
       
     <!-- Content Section -->
-    <div id="content" class="container mx-auto mt-8 flex min-h-screen">
-      <!-- Articles -->
-      <div class="w-2/3 pr-8 flex-grow">
-        <!-- Article about the airsoft camp -->
-        <article class="mb-8">
-          <h2 class="text-2xl font-bold mb-4">Airsoft Camp Description</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ligula
-            ante, laoreet consectetur ultricies sit amet, convallis at arcu.
-            Praesent quis tellus tincidunt, suscipit justo eu, feugiat risus.
-            Maecenas egestas imperdiet orci at bibendum. Cras ullamcorper
-            pretium odio ac facilisis. Pellentesque habitant morbi tristique
-            senectus et netus et malesuada fames ac turpis egestas. Nullam ac
-            pretium leo, eget pulvinar eros. Morbi non sapien nulla. Maecenas
-            ultrices sit amet nibh sed egestas. Quisque efficitur venenatis
-            tortor, et posuere erat egestas ut. Curabitur molestie, elit nec
-            elementum pretium, tortor dui porta turpis, volutpat convallis justo
-            libero sit amet urna. Fusce venenatis malesuada luctus. Proin id
-            sodales arcu. Integer vitae mauris pellentesque, auctor risus vel,
-            euismod ante. Nam posuere quam at tortor fermentum fringilla. Etiam
-            at fermentum velit, sit amet dignissim ipsum.
-          </p>
-          <p>
-            Sed ornare, orci quis congue tempor, sapien enim rutrum erat, quis
-            tempus diam purus at nibh. Integer quis eros mauris. Donec pulvinar
-            purus est, non molestie odio euismod laoreet. Donec pellentesque
-            nisi et pellentesque finibus. Morbi ac interdum ipsum, quis tempus
-            urna. Cras suscipit dictum magna vitae viverra. Mauris quis euismod
-            tellus. Suspendisse ac aliquam massa, et efficitur lorem.
-          </p>
-        </article>
-
-        <!-- Article with image on the left and video on the right -->
-        <article class="flex mb-8">
-          <div class="w-1/2 pr-4">
-            <img src="images/camp.jpg" alt="Camp Image" class="w-full h-auto" />
-          </div>
-          <div class="w-1/2">
-            <iframe
-              width="100%"
-              height="315"
-              src="https://www.youtube.com/embed/your-video-id"
-              title="YouTube Video"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </article>
+    <div id="content" class="container mx-auto mt-8 pb-8 lg:pb-16 flex min-h-screen">
+      <div class="container mx-auto mt-8 px-4">
+        <h1 class="text-4xl font-bold text-center mb-4">The Most Famous Airsoft Field in Barcelona</h1>
+        <h2 class="text-2xl font-semibold text-center mb-2">Welcome to AirsoftMunteanu!</h2>
+        <hr class="border-t-2 border-gray-300 my-4">
+        
+        <p class="text-lg text-center mb-8">Discover what you can find in this airsoft field.</p>
+        
+      <!-- Image Grid with Links -->
+      <div class="grid grid-cols-2 gap-4 mb-8">
+        <div class="relative flex flex-col items-center">
+          <a href="./html/events.html" class="block w-full h-full">
+            <div class="w-full h-48 overflow-hidden rounded-lg mb-2 relative transition duration-300 ease-in-out transform hover:scale-105">
+              <img src="./images/gun2.jpg" alt="Events Image" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 opacity-0 hover:opacity-100 transition duration-300 ease-in-out rounded-lg flex items-center justify-center">
+                <span class="text-lg font-semibold">Events</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="relative flex flex-col items-center">
+          <a href="./html/shop.html" class="block w-full h-full">
+            <div class="w-full h-48 overflow-hidden rounded-lg mb-2 relative transition duration-300 ease-in-out transform hover:scale-105">
+              <img src="./images/airsoft.jpg" alt="Shop Image" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 opacity-0 hover:opacity-100 transition duration-300 ease-in-out rounded-lg flex items-center justify-center">
+                <span class="text-lg font-semibold">Shop</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="relative flex flex-col items-center">
+          <a href="./html/policies.html" class="block w-full h-full">
+            <div class="w-full h-48 overflow-hidden rounded-lg mb-2 relative transition duration-300 ease-in-out transform hover:scale-105">
+              <img src="./images/aboutus1.jpg" alt="Policies Image" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 opacity-0 hover:opacity-100 transition duration-300 ease-in-out rounded-lg flex items-center justify-center">
+                <span class="text-lg font-semibold">Policies</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="relative flex flex-col items-center">
+          <a href="./html/contact.html" class="block w-full h-full">
+            <div class="w-full h-48 overflow-hidden rounded-lg mb-2 relative transition duration-300 ease-in-out transform hover:scale-105">
+              <img src="./images/aboutus2.jpg" alt="Contact Image" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 opacity-0 hover:opacity-100 transition duration-300 ease-in-out rounded-lg flex items-center justify-center">
+                <span class="text-lg font-semibold">Contact</span>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
 
-      <!-- Aside on the right with three smaller images and links -->
-      <aside class="w-1/3 flex-shrink-0">
-        <div class="p-4 mb-4">
-          <a href="./html/policies.html">
-            <img
-              src="images/normativa.jpg"
-              alt="Link 1"
-              class="w-64 h-auto mb-2"
-            />
-            Policies
-          </a>
+    
+        <hr class="border-t-2 border-gray-300 my-8">
+        
+        <!-- More About Us -->
+        <div class="text-center mt-8">
+          <p class="text-xl font-semibold mb-2">More About Us</p>
+          <p class="text-lg">
+            <a href="./html/about.html" class="text-blue-500 underline">Visit our About Us page</a>
+          </p>
         </div>
-        <div class="p-4 mb-4">
-          <a href="./html/shop.html">
-            <img src="images/shop.jpg" alt="Link 2" class="w-64 h-auto mb-2" />
-            Shop
-          </a>
-        </div>
-        <div class="p-4">
-          <a href="./html/contact.html">
-            <img
-              src="images/contacte.jpg"
-              alt="Link 3"
-              class="w-64 h-auto mb-2"
-            />
-            Contact
-          </a>
-        </div>
-      </aside>
+      </div>
     </div>
+
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white p-6 mt-8">
